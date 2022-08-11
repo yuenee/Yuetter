@@ -118,13 +118,49 @@ nav li a{
 	font-size: 24px;
 	position:relative;
 	bottom:60px;
+	pointer-events:none;
 }
 
-.icon{
-	float: right;
-	position:relative;
-	bottom: 105px;
 
+
+.hidden_box {
+    float: right;
+    margin: 2em 0;
+    padding: 0;
+    position:relative;
+    bottom:140px;
+}
+
+
+.hidden_box label {
+    padding: 15px;
+    font-weight: bold;
+    border: solid 2px black;
+    cursor :pointer;
+}
+
+
+.hidden_box label:hover {
+    background: #efefef;
+}
+
+
+.hidden_box input {
+    display: none;
+}
+
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
 }
 
 main{
