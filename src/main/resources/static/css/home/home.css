@@ -128,14 +128,13 @@ nav li a{
     margin: 2em 0;
     padding: 0;
     position:relative;
-    bottom:140px;
+    bottom:100px;
 }
 
 
-.hidden_box label {
+.btn_profile label{
     padding: 15px;
     font-weight: bold;
-    border: solid 2px black;
     cursor :pointer;
 }
 
@@ -144,12 +143,11 @@ nav li a{
     background: #efefef;
 }
 
-
 .hidden_box input {
     display: none;
 }
 
-.hidden_box .hidden_show {
+.hidden_box .dropdown-menu {
     height: 0;
     padding: 0;
     overflow: hidden;
@@ -157,11 +155,16 @@ nav li a{
     transition: 0.8s;
 }
 
-.hidden_box input:checked ~ .hidden_show {
+.hidden_box input:checked ~ .dropdown-menu{
     padding: 10px 0;
     height: auto;
-    opacity: 1;
+    opacity: 20;
 }
+
+bi bi-emoji-laughing{
+    font-size:50;
+}
+
 
 main{
     display: flex;
