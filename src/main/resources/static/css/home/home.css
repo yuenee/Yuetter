@@ -14,12 +14,11 @@ html, body{
 }
 
 .container-fluid {
-margin-right: auto;
-margin-left: auto;
-max-width: 900px; //例えば
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 900px;
 }
 
 .sidebar-toggle{
     cursor: pointer;
-
 }
