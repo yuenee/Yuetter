@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class YuetterApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(YuetterApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(YuetterApplication.class, args);
+    }
 
 }
