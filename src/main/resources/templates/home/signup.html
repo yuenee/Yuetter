@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>ゆえったー プロフィール編集</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <main>
+        <div class="col-md-8 col-lg-8 container">
+            <h2 class="mb-3">新規登録</h2>
+            <p> ご登録完了後、ご入力いただいたメールアドレスに、ご登録の確認メールをお送りします。受信設定をされている場合は、
+                事前にこちらをご確認ください。</p>
+            <hr class="my-4">
+            <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                    <p>
+                    <span class="text-danger">※</span>
+                        <span>は必須項目</span>
+                    </p>
+                    <div class="col-sm-6">
+                        <span class="text-danger">※</span>
+                        <label for="firstName" class="form-label">名字</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="名字" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <span class="text-danger">※</span>
+                        <label for="lastName" class="form-label">名前</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="名前" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <span class="text-danger">※</span>
+                        <label for="phone" class="form-label">電話番号</label>
+                        <input type="text" class="form-control" id="phone" placeholder="電話番号" required>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="username" class="form-label">ニックネーム</label>
+                        <div class="input-group has-validation">
+                            <input type="text" class="form-control" id="username" placeholder="ニックネーム" required>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <span class="text-danger">※</span>
+                        <label for="password" class="form-label">パスワード</label>
+                        <input type="text" class="form-control" id="password" placeholder="パスワード" required>
+                        <input class="form-check-input " type="checkbox" value="" id="PasswordCheckChecked" checked>
+                        <label class="form-check-label " for="flexCheckChecked">
+                          パスワード表示
+                        </label>
+                    </div>
+                    <div class="col-12">
+                        <span class="text-danger">※</span>
+                        <label for="email" class="form-label">メールアドレス</label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    </div>
+                    <div class="col-12">
+                        <span class="text-danger">※</span>
+                        <label for="password" class="form-label">メールアドレス確認</label>
+                        <input type="text" class="form-control" id="passwordConfirmation" placeholder="you@example.com" required>
+                    </div>
+                    <div class="my-3">
+                        <label for="email" class="form-label">性別</label>
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                                   required>
+                            <label class="form-check-label" for="credit">男</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">女</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="Jenda" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">その他</label>
+                        </div>
+                    </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="form-check">
+                        <p>利用契約</p>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            利用規約とプライバシーポリシーにご同意の上、確認画面へお進みください。
+                        </label>
+                    <button class="w-100 btn btn-primary btn-lg  mt-5" type="submit">変更</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
